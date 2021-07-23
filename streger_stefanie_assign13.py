@@ -1,7 +1,10 @@
 def main():
     filename = 'grades.txt'
-    high_grade(filename)
-    count_records(filename)
+    try:
+        high_grade(filename)
+        count_records(filename)
+     except IOError:
+        print('Invalid file name: ', filename)
 
 def count_records(filename):
     grade_file = open(filename, 'r')
@@ -31,8 +34,6 @@ def high_grade(filename):
             record = grade_file.readline()
         print('Highest Score: ', highest_score_name, ',', highest_score)
         grade_file.close()
-    except IOError:
-        print('Invalid file name: ', filename)
     except ValueError:
         print('A number in the file is not a number')
 
