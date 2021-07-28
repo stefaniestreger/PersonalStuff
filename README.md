@@ -1,2 +1,1 @@
-# PracticeStuff
-Practice stuff with Python
+# Graded Exercises from Python Course
