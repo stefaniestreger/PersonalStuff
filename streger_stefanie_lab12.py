@@ -5,4 +5,4 @@ def main():
         movie_list.write(x + "\n")
     movie_list.close()
 
-main()
+main() 
