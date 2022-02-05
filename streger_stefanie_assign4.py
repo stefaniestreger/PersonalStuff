@@ -23,4 +23,3 @@ elif monster >= 29 and monster <= 36:
         print("The monster color is: black")
 elif monster < 0 or monster > 36:
         print("You have entered an invalid number out of this range")
-
